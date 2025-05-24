@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header -->
-    <header>
+    <header id="header">
         <div class="container">
             <div class="logo">
                 <a href="index.html" class="logo-flex">
@@ -26,88 +26,91 @@
                 </a>
             </div>
 
-            <nav>
+            <nav id="nav">
                 <ul>
                     <li class="active"><a href="#home">HOME</a></li>
                     <li><a href="#procedimentos">PROCEDIMENTOS</a></li>
                     <li><a href="#como-funciona">COMO FUNCIONA</a></li>
                 </ul>
             </nav>
+            
             <div class="cta-button">
-                <a href="https://wa.link/zmwwbo" target="_blank" rel="noopener noreferrer" class="btn-gold">AGENDAR AVALIAÇÃO</a>
+                <a href="https://wa.link/zmwwbo" target="_blank" rel="noopener noreferrer" class="btn-gold">
+                    <i class="fab fa-whatsapp"></i>
+                    AGENDAR AVALIAÇÃO
+                </a>
+            </div>
+
+            <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
         <div class="hero-content">
             <div class="hero-text">
-                <h3>LUZ ESTETIC CENTER</h3>
-                <h1>Cirurgia Plástica Avançada, mas pode chamar de obra de arte.</h1>
-                <a href="https://wa.link/zmwwbo" target="_blank" rel="noopener noreferrer" class="btn-gold">AGENDAR AVALIAÇÃO</a>
+                <h3 class="hero-subtitle">LUZ ESTETIC CENTER</h3>
+                <h1 class="hero-title">Cirurgia Plástica Avançada, mas pode chamar de obra de arte.</h1>
+                <p class="hero-description">Transforme sua beleza com técnicas avançadas e cuidado personalizado</p>
+                <a href="https://wa.link/zmwwbo" target="_blank" rel="noopener noreferrer" class="btn-gold btn-hero">
+                    <i class="fab fa-whatsapp"></i>
+                    AGENDAR AVALIAÇÃO
+                </a>
             </div>
         </div>
-        <div class="whatsapp-float">
-            <a href="https://wa.link/zmwwbo" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-whatsapp"></i>
-                <span>AGENDAR AVALIAÇÃO</span>
-            </a>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
         </div>
     </section>
 
     <!-- Resultados Section -->
     <section class="resultados dark-section">
         <div class="container">
-            <div class="logo-icon">
-                <img src="images_index/favicon.png" alt="Logo Luz Estetic Center" />
-            </div>
-            <h2>Conheça nossos resultados</h2>
-            
-            <div class="carousel-container">
-                <div class="carousel-nav prev">
-                    <i class="fas fa-chevron-left"></i>
+            <div class="section-header">
+                <div class="logo-icon">
+                    <img src="images_index/favicon.png" alt="Logo Luz Estetic Center" />
                 </div>
-                
-                <div class="carousel">
-                    <div class="carousel-item">
-                        <div class="before-after">
-                            <img src="images_resultados/bumbum.jpg">
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="before-after">
-                            <img src="images_resultados/botox_rosto.png">
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="before-after">
-                            <img src="images_resultados/labios.png">
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="before-after">
-                            <img src="images_resultados/botox_testa.png">
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="before-after">
-                            <img src="images_resultados/rinoplastia.jpg">
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="carousel-nav next">
-                    <i class="fas fa-chevron-right"></i>
-                </div>
+                <h2>Conheça nossos resultados</h2>
+                <p class="section-subtitle">Transformações reais que falam por si só</p>
             </div>
             
-            <div class="carousel-dots">
-                <span class="dot active"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images_resultados/bumbum.jpg" alt="Resultado Gluteoplastia">
+                    <div class="gallery-overlay">
+                        <h3>Gluteoplastia</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images_resultados/botox_rosto.png" alt="Resultado Botox">
+                    <div class="gallery-overlay">
+                        <h3>Botox Facial</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images_resultados/labios.png" alt="Resultado Preenchimento Labial">
+                    <div class="gallery-overlay">
+                        <h3>Preenchimento Labial</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images_resultados/botox_testa.png" alt="Resultado Botox Testa">
+                    <div class="gallery-overlay">
+                        <h3>Botox Testa</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images_resultados/rinoplastia.jpg" alt="Resultado Rinoplastia">
+                    <div class="gallery-overlay">
+                        <h3>Rinoplastia</h3>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -115,11 +118,13 @@
     <!-- Tecnologia Section -->
     <section class="tecnologia gold-section" id="como-funciona">
         <div class="container">
-            <h3>UM NOVO OLHAR PARA A BELEZA QUE É SÓ SUA</h3>
-            <h2>Cirurgia Plástica com tecnologia de ponta e cuidado humano</h2>
+            <div class="section-header">
+                <h3 class="section-subtitle">UM NOVO OLHAR PARA A BELEZA QUE É SÓ SUA</h3>
+                <h2>Cirurgia Plástica com tecnologia de ponta e cuidado humano</h2>
+            </div>
             
             <div class="features-grid">
-                <div class="feature">
+                <div class="feature" data-aos="fade-up" data-aos-delay="100">
                     <div class="feature-icon">
                         <img src="images_icons/bandeiraPT.png" alt="Ícone" />
                     </div>
@@ -127,7 +132,7 @@
                     <p>A excelência e os resultados da Luz Estetic Center são amplamente reconhecidos</p>
                 </div>
                 
-                <div class="feature">
+                <div class="feature" data-aos="fade-up" data-aos-delay="200">
                     <div class="feature-icon">
                         <img src="images_icons/acompanhamento.png" alt="Ícone" />
                     </div>
@@ -135,7 +140,7 @@
                     <p>Exclusividade e máxima atenção aos detalhes pré, durante e após sua transformação</p>
                 </div>
                 
-                <div class="feature">
+                <div class="feature" data-aos="fade-up" data-aos-delay="300">
                     <div class="feature-icon">
                         <img src="images_icons/alto_padrão.png" alt="Ícone" />
                     </div>
@@ -143,7 +148,7 @@
                     <p>Clínica de alto luxo com estrutura premium e total acolhimento</p>
                 </div>
                 
-                <div class="feature">
+                <div class="feature" data-aos="fade-up" data-aos-delay="400">
                     <div class="feature-icon">
                         <img src="images_icons/equipamentos.png" alt="Ícone" />
                     </div>
@@ -151,7 +156,7 @@
                     <p>Tecnologias avançadas a laser para resultados precisos e mais naturais</p>
                 </div>
                 
-                <div class="feature">
+                <div class="feature" data-aos="fade-up" data-aos-delay="500">
                     <div class="feature-icon">
                         <img src="images_icons/atendimento.png" alt="Ícone" />
                     </div>
@@ -159,7 +164,7 @@
                     <p>Uma experiência única, com atenção personalizada e respeito às suas necessidades</p>
                 </div>
                 
-                <div class="feature">
+                <div class="feature" data-aos="fade-up" data-aos-delay="600">
                     <div class="feature-icon">
                         <img src="images_icons/equipe.png" alt="Ícone" />
                     </div>
@@ -173,18 +178,22 @@
     <!-- Procedimentos Section -->
     <section class="procedimentos dark-section" id="procedimentos">
         <div class="container">
-            <h3>PROCEDIMENTOS FACIAIS</h3>
-            <h2>Conquiste o rosto dos seus sonhos com máxima beleza e naturalidade</h2>
-            
-            <div class="procedimentos-info">
-                <p>Restaure a juventude e a confiança com procedimentos faciais que combinam precisão técnica e um olhar artístico.</p>
-                <a href="https://wa.link/zmwwbo" target="_blank" rel="noopener noreferrer" class="btn-gold">AGENDAR AVALIAÇÃO</a>
+            <div class="section-header">
+                <h3 class="section-subtitle">PROCEDIMENTOS FACIAIS</h3>
+                <h2>Conquiste o rosto dos seus sonhos com máxima beleza e naturalidade</h2>
+                <div class="procedimentos-info">
+                    <p>Restaure a juventude e a confiança com procedimentos faciais que combinam precisão técnica e um olhar artístico.</p>
+                    <a href="https://wa.link/zmwwbo" target="_blank" rel="noopener noreferrer" class="btn-gold">
+                        <i class="fab fa-whatsapp"></i>
+                        AGENDAR AVALIAÇÃO
+                    </a>
+                </div>
             </div>
             
             <div class="procedimentos-grid">
                 <div class="procedimento">
-                    <img src="images_procedimentos/botox.png">
-                    <div class = "overlay"></div>
+                    <img src="images_procedimentos/botox.png" alt="Botox">
+                    <div class="overlay"></div>
                     <div class="procedimento-content">
                         <h3>Botox</h3>
                         <p>Aplicação da toxina butolinica com precisão e produtos de alto padrão</p>
@@ -193,8 +202,8 @@
                 </div>
                 
                 <div class="procedimento">
-                    <img src="images_procedimentos/preenchimento_labial.png">
-                    <div class = "overlay"></div>
+                    <img src="images_procedimentos/preenchimento_labial.png" alt="Preenchimento Labial">
+                    <div class="overlay"></div>
                     <div class="procedimento-content">
                         <h3>Preenchimento Labial</h3>
                         <p>Aplicação de ácido hialurônico para deixar os lábios maiores e mais bonitos</p>
@@ -203,8 +212,8 @@
                 </div>
                 
                 <div class="procedimento">
-                    <img src="images_procedimentos/facelift.png">
-                    <div class = "overlay"></div>
+                    <img src="images_procedimentos/facelift.png" alt="FaceLift">
+                    <div class="overlay"></div>
                     <div class="procedimento-content">
                         <h3>FaceLift</h3>
                         <p>Rejuveneça sua aparência com um lifting facial que redefine contornos, suaviza rugas e devolve a firmeza ao rosto</p>
@@ -213,8 +222,8 @@
                 </div>
                 
                 <div class="procedimento">
-                    <img src="images_procedimentos/blefaroplastia.png">
-                    <div class = "overlay"></div>
+                    <img src="images_procedimentos/blefaroplastia.png" alt="Blefaroplastia">
+                    <div class="overlay"></div>
                     <div class="procedimento-content">
                         <h3>Blefaroplastia</h3>
                         <p>Olhos mais expressivos e rejuvenescidos, com técnicas precisas que corrigem excesso de pele e bolsas</p>
@@ -223,8 +232,8 @@
                 </div>
                 
                 <div class="procedimento">
-                    <img src="images_procedimentos/rinoplastia.png">
-                    <div class = "overlay"></div>
+                    <img src="images_procedimentos/rinoplastia.png" alt="Rinoplastia">
+                    <div class="overlay"></div>
                     <div class="procedimento-content">
                         <h3>Rinoplastia</h3>
                         <p>Transforme seu perfil com uma cirurgia que harmoniza o nariz às proporções únicas do seu rosto</p>
@@ -233,8 +242,8 @@
                 </div>
                 
                 <div class="procedimento">
-                    <img src="images_procedimentos/otoplastia.png">
-                    <div class = "overlay"></div>
+                    <img src="images_procedimentos/otoplastia.png" alt="Otoplastia">
+                    <div class="overlay"></div>
                     <div class="procedimento-content">
                         <h3>Otoplastia</h3>
                         <p>Corrija orelhas em abano ou assimetrias com um procedimento de resultados definitivos</p>
@@ -243,8 +252,8 @@
                 </div>
                 
                 <div class="procedimento">
-                    <img src="images_procedimentos/liplift.png">
-                    <div class = "overlay"></div>
+                    <img src="images_procedimentos/liplift.png" alt="Lip Lift">
+                    <div class="overlay"></div>
                     <div class="procedimento-content">
                         <h3>Lip Lift</h3>
                         <p>Valorize os seus lábios e o seu sorriso com um procedimento minimamente invasivo, mas com resultados definitivos</p>
@@ -253,8 +262,8 @@
                 </div>
                 
                 <div class="procedimento">
-                    <img src="images_procedimentos/harmonização_facial.png">
-                    <div class = "overlay"></div>
+                    <img src="images_procedimentos/harmonização_facial.png" alt="Harmonização Facial">
+                    <div class="overlay"></div>
                     <div class="procedimento-content">
                         <h3>Harmonização Facial</h3>
                         <p>Valorize os traços do seu rosto com ângulos mais bem definidos e contornos sofisticados</p>
@@ -263,8 +272,8 @@
                 </div>
 
                 <div class="procedimento">
-                    <img src="images_procedimentos/transplante_capilar.png">
-                    <div class = "overlay"></div>
+                    <img src="images_procedimentos/transplante_capilar.png" alt="Transplante Capilar">
+                    <div class="overlay"></div>
                     <div class="procedimento-content">
                         <h3>Transplante Capilar</h3>
                         <p>Recuperar o cabelo é só o começo — recupere a confiança, a presença e o seu melhor visual.</p>
@@ -273,8 +282,8 @@
                 </div>
 
                 <div class="procedimento">
-                    <img src="images_procedimentos/bichequitomia.png">
-                    <div class = "overlay"></div>
+                    <img src="images_procedimentos/bichequitomia.png" alt="Bichequitomia">
+                    <div class="overlay"></div>
                     <div class="procedimento-content">
                         <h3>Bichequitomia</h3>
                         <p>Técnica moderna para valorizar o que você tem de melhor: mais definição, mais harmonia, mais você!</p>
@@ -285,21 +294,25 @@
         </div>
     </section>
 
-        <!-- Procedimentos Corporais Section -->
-    <section class="procedimentos-corporais dark-section">
+    <!-- Procedimentos Corporais Section -->
+    <section class="procedimentos-corporais">
         <div class="container">
-            <h3>CIRURGIA PLÁSTICA CORPORAL</h3>
-            <h2>Realce o melhor do seu corpo com cirurgias projetadas para você</h2>
-            
-            <div class="procedimentos-info">
-                <p>Transforme seu corpo com procedimentos que combinam técnica avançada e resultados naturais.</p>
-                <a href="https://wa.link/zmwwbo" target="_blank" rel="noopener noreferrer" class="btn-gold">AGENDAR AVALIAÇÃO</a>
+            <div class="section-header">
+                <h3 class="section-subtitle">CIRURGIA PLÁSTICA CORPORAL</h3>
+                <h2>Realce o melhor do seu corpo com cirurgias projetadas para você</h2>
+                <div class="procedimentos-info">
+                    <p>Transforme seu corpo com procedimentos que combinam técnica avançada e resultados naturais.</p>
+                    <a href="https://wa.link/zmwwbo" target="_blank" rel="noopener noreferrer" class="btn-gold">
+                        <i class="fab fa-whatsapp"></i>
+                        AGENDAR AVALIAÇÃO
+                    </a>
+                </div>
             </div>
             
             <div class="procedimentos-corporais-grid">
                 <div class="procedimento-corporal">
-                    <img src="images_procedimentos/lipoaspiração.png">
-                    <div class = "overlay"></div>
+                    <img src="images_procedimentos/lipoaspiração.png" alt="Lipoaspiração">
+                    <div class="overlay"></div>
                     <div class="procedimento-content">
                         <h3>Lipoaspiração</h3>
                         <p>Remova gordura localizada e conquiste o contorno corporal desejado</p>
@@ -308,8 +321,8 @@
                 </div>
                 
                 <div class="procedimento-corporal">
-                    <img src="images_procedimentos/mamoplastia.png">
-                    <div class = "overlay"></div>
+                    <img src="images_procedimentos/mamoplastia.png" alt="Mamoplastia">
+                    <div class="overlay"></div>
                     <div class="procedimento-content">
                         <h3>Mamoplastia</h3>
                         <p>Eleve sua autoestima remodelando os seios com naturalidade e segurança</p>
@@ -318,8 +331,8 @@
                 </div>
 
                 <div class="procedimento-corporal">
-                    <img src="images_procedimentos/gluteo.png">
-                    <div class = "overlay"></div>
+                    <img src="images_procedimentos/gluteo.png" alt="Gluteoplastia">
+                    <div class="overlay"></div>
                     <div class="procedimento-content">
                         <h3>Gluteoplastia</h3>
                         <p>Harmonize as curvas com um bumbum modelado e volumoso, em perfeita proporção ao seu corpo</p>
@@ -328,8 +341,8 @@
                 </div>
                 
                 <div class="procedimento-corporal gold-bg">
-                    <img src="images_procedimentos/ninfoplastia.png">
-                    <div class = "overlay"></div>
+                    <img src="images_procedimentos/ninfoplastia.png" alt="Ninfoplastia">
+                    <div class="overlay"></div>
                     <div class="procedimento-content">
                         <h3>Ninfoplastia</h3>
                         <p>A ninfoplastia é um procedimento delicado que devolve conforto, autoestima e bem-estar íntimo, respeitando a individualidade e os desejos de cada mulher.</p>
@@ -338,8 +351,8 @@
                 </div>
                 
                 <div class="procedimento-corporal gold-bg">
-                    <img src="images_procedimentos/lifting_braço.png">
-                    <div class = "overlay"></div>
+                    <img src="images_procedimentos/lifting_braço.png" alt="Lifting de Braços">
+                    <div class="overlay"></div>
                     <div class="procedimento-content">
                         <h3>Lifting de Braços</h3>
                         <p>Remova a flacidez e valorize os braços com um contorno firme e rejuvenescido</p>
@@ -348,8 +361,8 @@
                 </div>
                 
                 <div class="procedimento-corporal gold-bg">
-                    <img src="images_procedimentos/lifting_coxas.png">
-                    <div class = "overlay"></div>
+                    <img src="images_procedimentos/lifting_coxas.png" alt="Lifting de Coxas">
+                    <div class="overlay"></div>
                     <div class="procedimento-content">
                         <h3>Lifting de Coxas</h3>
                         <p>Transforme o contorno das coxas com resultados que aliam beleza e naturalidade</p>
@@ -366,16 +379,19 @@
             <div class="sobre-grid">
                 <div class="sobre-content">
                     <h2>Sobre a Luz Batalha</h2>
-                    <p>Informações Sobre</p>
+                    <p>Com mais de 10 anos de experiência em cirurgia plástica, a Dra. Luz Batalha é reconhecida pela excelência técnica e pelo cuidado humanizado com cada paciente.</p>
                     
-                    <p>Informações Sobre</p>
+                    <p>Especialista em procedimentos faciais e corporais, combina técnicas avançadas com um olhar artístico único, garantindo resultados naturais e harmoniosos.</p>
                     
-                    <p>Informações Sobre</p>
+                    <p>Sua dedicação à medicina estética e o compromisso com a satisfação dos pacientes fazem da Luz Estetic Center uma referência em transformações que respeitam a individualidade de cada pessoa.</p>
                     
-                    <a href="https://wa.link/zmwwbo" target="_blank" rel="noopener noreferrer" class="btn-gold">AGENDAR AVALIAÇÃO</a>
+                    <a href="https://wa.link/zmwwbo" target="_blank" rel="noopener noreferrer" class="btn-gold">
+                        <i class="fab fa-whatsapp"></i>
+                        AGENDAR AVALIAÇÃO
+                    </a>
                 </div>
                 <div class="sobre-image">
-                    <div class="image-placeholder">
+                    <div class="image-container">
                         <img src="images_index/luz.jpg" alt="Sobre Luz Estetic Center" />
                     </div>
                 </div>
@@ -384,26 +400,26 @@
     </section>
 
     <!-- Estatísticas Section -->
-    <section class="estatisticas gold-section">
+    <section id ="estatisticas" class="estatisticas gold-section">
         <div class="container">
             <div class="estatisticas-grid">
                 <div class="estatistica">
-                    <h2>+10</h2>
+                    <div class="estatistica-number" data-target="20">0</div>
                     <p>Anos de Experiência</p>
                 </div>
                 
                 <div class="estatistica">
-                    <h2>+2.800</h2>
+                    <div class="estatistica-number" data-target="2800">0</div>
                     <p>Pacientes Transformados</p>
                 </div>
                 
                 <div class="estatistica">
-                    <h2>+150</h2>
+                    <div class="estatistica-number" data-target="160">0</div>
                     <p>Cursos de Aprimoramento</p>
                 </div>
                 
                 <div class="estatistica">
-                    <h2>+1.400</h2>
+                    <div class="estatistica-number" data-target="1400">0</div>
                     <p>Cirurgias De Sucesso</p>
                 </div>
             </div>
@@ -413,50 +429,55 @@
     <!-- Depoimentos Section -->
     <section class="depoimentos dark-section">
         <div class="container">
-            <h3>DEPOIMENTOS</h3>
-            <h2>Pacientes transformados pela Luz Estetic Center</h2>
+            <div class="section-header">
+                <h3 class="section-subtitle">DEPOIMENTOS</h3>
+                <h2>Pacientes transformados pela Luz Estetic Center</h2>
+            </div>
             
             <div class="depoimentos-grid">
                 <div class="depoimento">
-                    <h3>Henrique Silva</h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                    <div class="depoimento-header">
+                        <h3>Henrique Silva</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
                     </div>
                     <p class="location">LISBOA - PT</p>
-                    <p class="testimonial">Uma excelente profissional, sempre disponível para satisfazer os gostos mais requintes dos seus fãs e clientes.
-Recomendo os seus serviços.</p>
+                    <p class="testimonial">"Uma excelente profissional, sempre disponível para satisfazer os gostos mais requintes dos seus fãs e clientes. Recomendo os seus serviços."</p>
                 </div>
                 
                 <div class="depoimento">
-                    <h3>B.R</h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                    <div class="depoimento-header">
+                        <h3>B.R</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
                     </div>
                     <p class="location">LISBOA - PT</p>
-                    <p class="testimonial">Muito top, a Luz é muito simpática, local apropriado e bem higienizado! Recomendo para todos, fui bem tratado e me senti um novo homem saindo de lá 😂 Muito top!!</p>
+                    <p class="testimonial">"Muito top, a Luz é muito simpática, local apropriado e bem higienizado! Recomendo para todos, fui bem tratado e me senti um novo homem saindo de lá 😂 Muito top!!"</p>
                 </div>
                 
                 <div class="depoimento">
-                    <h3>Helen</h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                    <div class="depoimento-header">
+                        <h3>Helen</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
                     </div>
                     <p class="location">LISBOA - PT</p>
-                    <p class="testimonial">Imenso o que fez por eu. Estou tão feliz, mas tão feliz. Você não sabe como me ajudou na minha autoestima.
-Não tenho palavras para lhe agradecer, mas agradeço com minhas orações por ti, para que Deus possa cada vez mais te abençoar com muita saúde e que seus projetos avancem a cada dia.
-Um grande beijo. Deus abençoe. Sempre gratidão 🙏</p>
+                    <p class="testimonial">"Imenso o que fez por eu. Estou tão feliz, mas tão feliz. Você não sabe como me ajudou na minha autoestima. Não tenho palavras para lhe agradecer, mas agradeço com minhas orações por ti, para que Deus possa cada vez mais te abençoar com muita saúde e que seus projetos avancem a cada dia. Um grande beijo. Deus abençoe. Sempre gratidão 🙏"</p>
                 </div>
             </div>
         </div>
@@ -477,6 +498,7 @@ Um grande beijo. Deus abençoe. Sempre gratidão 🙏</p>
                     <div class="footer-section">
                         <h3>Contato</h3>
                         <p><i class="fas fa-phone"></i> +351 925 141 845</p>
+                        <p><i class="fab fa-whatsapp"></i> WhatsApp</p>
                     </div>
                     <div class="footer-section">
                         <h3>Endereço</h3>
@@ -491,8 +513,12 @@ Um grande beijo. Deus abençoe. Sempre gratidão 🙏</p>
                     <div class="footer-section">
                         <h3>Redes Sociais</h3>
                         <div class="social-icons">
-                            <a href="https://www.instagram.com/clinicadecirurgiaplastica_luz_/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-                            <a href="https://www.facebook.com/profile.php?id=61567758326111" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/clinicadecirurgiaplastica_luz_/" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.facebook.com/profile.php?id=61567758326111" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-facebook"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -502,6 +528,14 @@ Um grande beijo. Deus abençoe. Sempre gratidão 🙏</p>
             </div>
         </div>
     </footer>
+
+    <!-- WhatsApp Float -->
+    <div class="whatsapp-float">
+        <a href="https://wa.link/zmwwbo" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-whatsapp"></i>
+            <span>AGENDAR AVALIAÇÃO</span>
+        </a>
+    </div>
 
     <script src="script.js"></script>
 </body>
